@@ -78,9 +78,10 @@ with open("input.txt", 'r', encoding='utf-8') as file:
         elif game_outcome == "Win":
             score += points["win"] + points[winner[opponent_choice]]
         else:
-            for move, losing_move in winner.items():
-                if losing_move == opponent_choice:
-                    score += points[move]
+            for losing_move, winning_move in winner.items():
+                print(losing_move, winning_move)
+                if winning_move == opponent_choice:
+                    score += points[losing_move]
                     break
 print(score)
 

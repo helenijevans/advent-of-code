@@ -25,19 +25,19 @@ points = {
     "draw": 3
 }
 
-# with open("input.txt", 'r', encoding='utf-8') as file:
-#     score = 0
-#     for line in file:
-#         choices = line.split()
-#         opponent_choice = opponentEnc[choices[0]]
-#         player_choice = playerEnc[choices[1]]
-#         if opponent_choice == player_choice:
-#             score += points["draw"] + points[player_choice]
-#         elif winner[opponent_choice] == player_choice:
-#             score += points["win"] + points[player_choice]
-#         else:
-#             score += points[player_choice]
-# print(score)
+with open("input.txt", 'r', encoding='utf-8') as file:
+    score = 0
+    for line in file:
+        choices = line.split()
+        opponent_choice = opponentEnc[choices[0]]
+        player_choice = playerEnc[choices[1]]
+        if opponent_choice == player_choice:
+            score += points["draw"] + points[player_choice]
+        elif winner[opponent_choice] == player_choice:
+            score += points["win"] + points[player_choice]
+        else:
+            score += points[player_choice]
+print(score)
 
 # PART 2
 playerEnc = {

@@ -26,3 +26,4 @@ with open("input.txt", 'r', encoding='utf-8') as file:
         else:
             count += int(line)
 print(sum(top3))
+

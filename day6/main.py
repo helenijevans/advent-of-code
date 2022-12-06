@@ -17,7 +17,7 @@ def packet_processing(marker_length):
                 marker.popleft()
 
 
-# RUN FOR PART 1 ANSWER
+# PART 1 ANSWER
 print(packet_processing(marker_length=4))
-# RUN FOR PART 2 ANSWER
+# PART 2 ANSWER
 print(packet_processing(marker_length=14))
